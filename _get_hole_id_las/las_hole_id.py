@@ -21,6 +21,7 @@ def main():
     
     second_col = []
     third_col = []
+    fourth_col = []
     for las_path in las_files:
         las = lasio.read(las_path)
         if las.params['SRC'].value == "Yes":
@@ -31,10 +32,13 @@ def main():
             las.well['FLD'].value == "ROY HILL":
             third_col.append("True")
         else: third_col.append("False")    
+        fourth_col.append(las.params['LOGU'].value)
+
 
     df = {"Hole": hole_id,
           "Source_id": second_col,
-          "Field": third_col          
+          "Field": third_col,
+          "Logging_Unit": fourth_col,          
           }
     df = pd.DataFrame(df)
     df.to_csv(os.path.join(out_dir,"rhio_sum.csv"))

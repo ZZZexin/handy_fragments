@@ -6,10 +6,15 @@ import pandas as pd
 import json
 
 
+
 class ReadWellReport:
     def __init__(self):
-        self.json_load = False
-        self.wellreport = None
+        project_root = Path(__file__).resolve().parent
+        json_path = project_root / "src" / "config" / "well_report_src.json"
+        with open(json_path, "r", encoding="utf-8") as f:
+            self.wellreport = json.load(f)
+            f.close()
+
 
     def header_info(self, wb_path):
         if not self.json_load:
@@ -50,13 +55,6 @@ class ReadWellReport:
         df = pd.DataFrame(data)
         return df # get the final extraction table
  
-    def _load_json(self):
-        self.json_load = True
-        project_root = Path(__file__).resolve().parent
-        json_path = project_root / "src" / "config" / "well_report_src.json"
-        with open(json_path, "r", encoding="utf-8") as f:
-            self.wellreport = json.load(f)
-            f.close()
 
 
 
