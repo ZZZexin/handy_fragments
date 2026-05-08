@@ -31,7 +31,7 @@ selected_tool = container_func.selectbox(
     key="selected_tool"
 )
 
-if container_func.button("Open selected too", type='primary'):
+if container_func.button("Open selected tool", type='primary'):
     if selected_tool is None:
         st.warning("Please select a tool first.")
     else:

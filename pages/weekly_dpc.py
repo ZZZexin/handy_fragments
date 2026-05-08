@@ -51,6 +51,8 @@ if load_well_reports is not None:
             hole_id = readwellreport.header_info(loadedwr)["hole_name"] #
 
             areainfo = readwellreport.area_info(loadedwr, area_search = "logging")
+
+            
             
 
 
