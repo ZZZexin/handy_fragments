@@ -1,0 +1,71 @@
+{
+    "header_addresses": {
+        "Tool No.": {
+            "start": "0x00000105",
+            "length": 4
+        },
+        "Serial No.": {
+            "start": "0x0000013B",
+            "length": 4
+        },
+        "LogU": {
+            "start": "0x0000025A",
+            "length": 4
+        },
+        "Encoder": {
+            "start": "0x0000011C",
+            "length": 7
+        },
+        "Date": {
+            "start": "0x0000013F",
+            "length": 8
+        },
+        "Time": {
+            "start": "0x00000147",
+            "length": 5
+        },
+        "Sample Rate": {
+            "start": "0x00000124",
+            "length": 3
+        },
+        "Start Depth": {
+            "start": "0x0000012A",
+            "length": 5
+        },
+        "Stop Depth": {
+            "start": "0x00000131",
+            "length": 6
+        },
+        "MDEN": {
+            "start": "0x00000345",
+            "length": 4
+        }
+    },
+    "data": {
+        "start_offset": "0x00002C00",
+        "step": 4,
+        "depth_increment": 0.1,
+        "row_length": 6,
+        "null_value": -999.25,
+        "read_direction": "auto"
+    },
+    "data_addresses": [],
+    "calibration_mapping": {},
+    "columns": [
+        "DEPTH",
+        "GAMMA",
+        "SSD",
+        "LSD",
+        "RES",
+        "VALID",
+        "LSD_CORR"
+    ],
+    "column_notes": {
+        "GAMMA": "Gamma ray (API units) - column index 0",
+        "SSD": "Short-spacing detector counts (CPS) - column index 1",
+        "LSD": "Long-spacing detector counts (CPS) - column index 2",
+        "RES": "Resistivity (ohm-m) - column index 3, typically constant per log",
+        "VALID": "Data validity flag (-10=valid, 0=padding past log end) - column index 4",
+        "LSD_CORR": "Corrected bulk density (g/cc) - column index 5"
+    }
+}

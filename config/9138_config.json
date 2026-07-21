@@ -1,0 +1,193 @@
+{
+    "header_addresses": {
+        "Tool No.": {
+            "start": "0x00000105",
+            "length": 4
+        },
+        "Serial No.": {
+            "start": "0x0000013B",
+            "length": 4
+        },
+        "LogU": {
+            "start": "0x0000025A",
+            "length": 4
+        },
+        "Operator": {
+            "start": "0x0000026B",
+            "length": 3
+        },
+        "Encoder": {
+            "start": "0x0000011C",
+            "length": 7
+        },
+        "Date": {
+            "start": "0x0000013F",
+            "length": 8
+        },
+        "Time": {
+            "start": "0x00000147",
+            "length": 5
+        },
+        "Sample Rate": {
+            "start": "0x00000124",
+            "length": 3
+        },
+        "Start Depth": {
+            "start": "0x00000131",
+            "length": 5
+        },
+        "Stop Depth": {
+            "start": "0x0000012A",
+            "length": 6
+        },
+        "matr": {
+            "start": "0x00000345",
+            "length": 4
+        },
+        "mden": {
+            "start": "0x00000349",
+            "length": 9
+        },
+        "elcon": {
+            "start": "0x0000039A",
+            "length": 5
+        }
+    },
+    "data": {
+        "start_offset": "0x00002C00",
+        "step": 4,
+        "depth_increment": 0.1,
+        "row_length": 12,
+        "null_value": -999.25,
+        "read_direction": "reverse"
+    },
+    "data_addresses": [
+        {
+            "label": "LOW DENSITY [EU 1]",
+            "address": "0x0000088E"
+        },
+        {
+            "label": "LOW DENSITY [CPS 1]",
+            "address": "0x0000088A"
+        },
+        {
+            "label": "HIGH DENSITY [EU 2]",
+            "address": "0x000008A0"
+        },
+        {
+            "label": "HIGH DENSITY [CPS 2]",
+            "address": "0x0000089C"
+        },
+        {
+            "label": "GAMMA_D [EU 1]",
+            "address": "0x00000822"
+        },
+        {
+            "label": "GAMMA_D [CPS 1]",
+            "address": "0x0000081E"
+        },
+        {
+            "label": "GAMMA_D [EU 2]",
+            "address": "0x00000834"
+        },
+        {
+            "label": "GAMMA_D [CPS 2]",
+            "address": "0x00000830"
+        },
+        {
+            "label": "CURRENT [EU 1]",
+            "address": "0x000008D6"
+        },
+        {
+            "label": "CURRENT [CPS 1]",
+            "address": "0x000008D2"
+        },
+        {
+            "label": "CURRENT [EU 2]",
+            "address": "0x000008E8"
+        },
+        {
+            "label": "CURRENT [CPS 2]",
+            "address": "0x000008E4"
+        },
+        {
+            "label": "VOLTAGE [EU 1]",
+            "address": "0x00000846"
+        },
+        {
+            "label": "VOLTAGE [CPS 1]",
+            "address": "0x00000842"
+        },
+        {
+            "label": "VOLTAGE [EU 2]",
+            "address": "0x00000858"
+        },
+        {
+            "label": "VOLTAGE [CPS 2]",
+            "address": "0x00000854"
+        },
+        {
+            "label": "CALIPER [EU 1]",
+            "address": "0x0000086A"
+        },
+        {
+            "label": "CALIPER [CPS 1]",
+            "address": "0x00000866"
+        },
+        {
+            "label": "CALIPER [EU 2]",
+            "address": "0x0000087C"
+        },
+        {
+            "label": "CALIPER [CPS 2]",
+            "address": "0x00000878"
+        }
+    ],
+    "calibration_mapping": {
+        "DENSITY": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "GAMMA_D": [
+            4,
+            5,
+            6,
+            7
+        ],
+        "CURRENT": [
+            8,
+            9,
+            10,
+            11
+        ],
+        "VOLTAGE": [
+            12,
+            13,
+            14,
+            15
+        ],
+        "CALIPER": [
+            16,
+            17,
+            18,
+            19
+        ]
+    },
+    "columns": [
+        "DEPTH",
+        "GAMMA_D",
+        "RES(SG)",
+        "CALIPER",
+        "DENSITY",
+        "CURRENT",
+        "VOLTAGE",
+        "POR(DEN)",
+        "TEMP",
+        "DEL TEMP",
+        "DENSITY(C)",
+        "TENSION",
+        "TIME"
+    ]
+}

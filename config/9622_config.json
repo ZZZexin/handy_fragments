@@ -1,0 +1,118 @@
+{
+    "header_addresses": {
+        "Tool No.": {
+            "start": "0x00000105",
+            "length": 4
+        },
+        "Serial No.": {
+            "start": "0x0000013B",
+            "length": 4
+        },
+        "LogU": {
+            "start": "0x0000025A",
+            "length": 4
+        },
+        "Operator": {
+            "start": "0x0000026B",
+            "length": 3
+        },
+        "Encoder": {
+            "start": "0x0000011C",
+            "length": 7
+        },
+        "Date": {
+            "start": "0x0000013F",
+            "length": 8
+        },
+        "Time": {
+            "start": "0x00000147",
+            "length": 5
+        },
+        "Sample Rate": {
+            "start": "0x00000124",
+            "length": 3
+        },
+        "Start Depth": {
+            "start": "0x0000012A",
+            "length": 5
+        },
+        "Stop Depth": {
+            "start": "0x00000131",
+            "length": 6
+        }
+    },
+    "data": {
+        "start_offset": "0x00002C00",
+        "step": 4,
+        "depth_increment": 0.1,
+        "row_length": 15,
+        "null_value": -999.25,
+        "read_direction": "reverse"
+    },
+    "data_addresses": [
+        {
+            "label": "GAMMA [EU 1]",
+            "address": "0x00000822"
+        },
+        {
+            "label": "GAMMA [CPS 1]",
+            "address": "0x0000081E"
+        },
+        {
+            "label": "GAMMA [EU 2]",
+            "address": "0x00000834"
+        },
+        {
+            "label": "GAMMA [CPS 2]",
+            "address": "0x00000830"
+        },
+        {
+            "label": "SUCSEP [EU 1]",
+            "address": "0x00000846"
+        },
+        {
+            "label": "SUCSEP [CPS 1]",
+            "address": "0x00000842"
+        },
+        {
+            "label": "SUCSEP [EU 2]",
+            "address": "0x00000858"
+        },
+        {
+            "label": "SUCSEP [CPS 2]",
+            "address": "0x00000854"
+        }
+    ],
+    "calibration_mapping": {
+        "GAMMA_M": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "SUSCEP": [
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "columns": [
+        "DEPTH",
+        "GAMMA_M",
+        "SUSCEP",
+        "SANG",
+        "SANGB",
+        "MAG-VECT",
+        "XINCL",
+        "YINCL",
+        "XFLUX",
+        "YFLUX",
+        "ZFLUX",
+        "TEMP(C)",
+        "TEMP(CPS)",
+        "SUSCEP(CPS)",
+        "TENSION",
+        "TIME"
+    ]
+}

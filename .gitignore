@@ -4,3 +4,9 @@
 *.ipynb
 
 README.MD
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.claude/
